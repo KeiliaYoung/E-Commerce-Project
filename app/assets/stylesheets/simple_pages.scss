@@ -1,0 +1,41 @@
+// Place all the styles related to the simple_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  display: block;
+  padding: 4px 8px;
+  text-decoration: none;
+  color: #990503;
+  font-size: 2.5em;
+  font-family: Monda;
+  font-weight: 700;
+}
+
+$font-stack: BenchNine, sans-serif;
+$primary-color: #016817;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+  text-align: center;
+  background-image: url("Red.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  font-weight: 650;
+}
+
+footer p {
+font-size: 2em;
+color: #016817;
+text-align: right;
+}
