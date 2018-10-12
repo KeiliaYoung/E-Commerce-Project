@@ -5,37 +5,92 @@ nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
+  background-color: #ffffff;
+  opacity: 0.6;
 }
 
 nav li {
   display: inline-block;
+  letter-spacing: 0.4em;
+  padding: 1em;
 }
 
 nav a {
   display: block;
-  padding: 4px 8px;
+  padding: 10px;
   text-decoration: none;
-  color: #990503;
+  color: #49002d;
   font-size: 2.5em;
-  font-family: Monda;
-  font-weight: 700;
+  font-family: K2D;
+  font-weight: 600;
+  text-decoration: underline;
 }
 
-$font-stack: BenchNine, sans-serif;
-$primary-color: #016817;
+h1  {
+  background-color: #ffffff;
+  opacity: 0.7;
+  margin-bottom: 0;
+  padding-top: 15px;
+  font-size: 2em;
+  padding-bottom: 0;
+  margin-top: 2em;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+h2 {
+  background-color: #ffffff;
+  opacity: 0.7;
+  padding-top: 8px;
+  font-size: 1.5em;
+  margin-bottom: 0;
+  line-height: 1;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+$font-stack: Merienda, sans-serif;
+$primary-color: #055b87;
 
 body {
   font: 100% $font-stack;
   color: $primary-color;
-  text-align: center;
-  background-image: url("Red.jpg");
+  background-image: url("https://st2.depositphotos.com/1000217/10820/i/950/depositphotos_108202046-stock-photo-rustic-weathered-barn-wood-background.jpg");
   background-repeat: no-repeat;
+  text-align: center;
   background-size: 100%;
   font-weight: 650;
 }
 
-footer p {
-font-size: 2em;
-color: #016817;
+img {
+  width: 350px;
+  margin-top: 2em;
+  padding: 10px;
+  margin-bottom: 2em;
+  height: 250px;
+}
+
+p {
+  margin-top: 0;
+  background-color: #ffffff;
+  opacity: 0.8;
+  padding: 2.5em;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+#my-images {
+  background-color: #ffffff;
+  opacity: 0.8;
+}
+
+#contactme {
+  text-align: center;
+}
+
+footer {
+font-size: 1em;
+color: #49002d;
 text-align: right;
+background-color: none;
 }
