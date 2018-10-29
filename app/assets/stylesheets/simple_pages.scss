@@ -27,39 +27,37 @@ nav a {
 }
 
 h1  {
-  background-color: #ffffff;
-  opacity: 0.7;
   margin-bottom: 0;
   padding-top: 15px;
   font-size: 2em;
-  padding-bottom: 0;
+  padding-bottom: 8px;
   margin-top: 2em;
   margin-left: -15px;
   margin-right: -15px;
+  text-decoration: underline;
 }
 
 h2 {
-  background-color: #ffffff;
-  opacity: 0.7;
   padding-top: 8px;
   font-size: 1.5em;
   margin-bottom: 0;
-  line-height: 1;
+  line-height: 2;
   margin-left: -15px;
   margin-right: -15px;
 }
 
-$font-stack: Merienda, sans-serif;
-$primary-color: #055b87;
+$font-stack: serif, sans-serif;
+$primary-color: #fcfcfc;
 
 body {
   font: 100% $font-stack;
   color: $primary-color;
-  background-image: url("https://st2.depositphotos.com/1000217/10820/i/950/depositphotos_108202046-stock-photo-rustic-weathered-barn-wood-background.jpg");
+  background-image: url("http://www.keepingwiththetimes.com/wp-content/uploads/2015/08/DSC_9215.jpg");
   background-repeat: no-repeat;
+  background-size: 70%;
   text-align: center;
-  background-size: 100%;
   font-weight: 650;
+  background-position: center;
 }
 
 img {
@@ -72,25 +70,32 @@ img {
 
 p {
   margin-top: 0;
-  background-color: #ffffff;
-  opacity: 0.8;
   padding: 2.5em;
   margin-left: -15px;
   margin-right: -15px;
-}
-
-#my-images {
-  background-color: #ffffff;
-  opacity: 0.8;
 }
 
 #contactme {
   text-align: center;
 }
 
+#products {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  line-height: 1;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+table {
+  margin-left: 270px;
+  margin-top: 20px;
+  margin-right: 150px;
+}
+
 footer {
-font-size: 1em;
-color: #49002d;
-text-align: right;
-background-color: none;
+  font-size: 1em;
+  color: #ffffff;
+  text-align: right;
+  margin-right: 270px;
 }
