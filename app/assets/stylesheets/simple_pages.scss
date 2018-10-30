@@ -1,26 +1,12 @@
 // Place all the styles related to the simple_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  background-color: #ffffff;
-  opacity: 0.7;
-}
-
-nav li {
+nav ul li {
   display: inline-block;
-  letter-spacing: 0.4em;
+  letter-spacing: 0.3em;
   padding: 1em;
-}
-
-nav a {
-  display: block;
-  padding: 10px;
-  text-decoration: none;
-  font-size: 2.5em;
   font-family: K2D;
+  font-size: 2.1em;
   font-weight: 600;
   text-decoration: underline;
 }
@@ -34,6 +20,7 @@ h1  {
   margin-left: -15px;
   margin-right: -15px;
   text-decoration: underline;
+  font-weight: 600;
 }
 
 h2 {
@@ -43,35 +30,42 @@ h2 {
   line-height: 2;
   margin-left: -15px;
   margin-right: -15px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 2em;
 }
 
 $font-stack: serif, sans-serif;
-$primary-color: #fcfcfc;
+$primary-color: #4f0000;
 
 body {
   font: 100% $font-stack;
   color: $primary-color;
-  background-image: url("http://www.keepingwiththetimes.com/wp-content/uploads/2015/08/DSC_9215.jpg");
-  background-repeat: no-repeat;
-  background-size: 80%;
   text-align: center;
-  font-weight: 650;
+  background-image: url("https://mobileimages.lowes.com/product/converted/501141/5011419232734.jpg");
+  background-repeat: no-repeat;
   background-position: center;
+  background-size: 80%;
+  font-weight: 600;
 }
 
 img {
-  width: 350px;
+  width: 250px;
   margin-top: 2em;
-  padding: 10px;
+  padding: 5px;
   margin-bottom: 2em;
-  height: 250px;
+  height: 200px;
 }
 
 p {
   margin-top: 0;
-  padding: 2.5em;
+  padding: 2em;
   margin-left: -15px;
   margin-right: -15px;
+  font-size: 1.2em;
+  font-weight: 530;
 }
 
 #contactme {
@@ -79,11 +73,12 @@ p {
 }
 
 #products {
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin-bottom: 1em;
-  line-height: 1;
+  line-height: 0.75;
   margin-left: -15px;
   margin-right: -15px;
+  font-weight: 600;
 }
 
 #prod-title {
@@ -91,16 +86,9 @@ p {
   margin-top: 10px;
 }
 
-table {
-  margin-left: 270px;
-  margin-top: 20px;
-  margin-right: 150px;
-  text-align: left;
-}
-
 footer {
   font-size: 1em;
-  color: #ffffff;
+  color: #4f0000;
   text-align: right;
   margin-right: 270px;
 }
