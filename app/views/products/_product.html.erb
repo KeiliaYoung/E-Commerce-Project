@@ -1,0 +1,13 @@
+<div class="col-sm">
+  <h1><%= link_to product.name, product %></h1>
+  <%= image_tag(product.image_url, class: "img-fluid") %>
+  <p><%= product.description %></p>
+  <p><strong>$ <%= product.price %></strong></p>
+  <br>
+
+  <div id="Sed">
+    <td><%= link_to 'Show', product %></td>
+    <td><%= link_to 'Edit', edit_product_path(product) %></td>
+    <td><%= link_to 'Delete', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </div>
+</div><!-- /col -->

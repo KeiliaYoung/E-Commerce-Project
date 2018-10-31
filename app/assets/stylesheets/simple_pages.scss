@@ -17,8 +17,6 @@ h1  {
   font-size: 2em;
   padding-bottom: 8px;
   margin-top: 2em;
-  margin-left: -15px;
-  margin-right: -15px;
   text-decoration: underline;
   font-weight: 600;
 }
@@ -28,8 +26,6 @@ h2 {
   font-size: 1.5em;
   margin-bottom: 0;
   line-height: 2;
-  margin-left: -15px;
-  margin-right: -15px;
   font-weight: 600;
 }
 
@@ -44,11 +40,16 @@ body {
   font: 100% $font-stack;
   color: $primary-color;
   text-align: center;
-  background-image: url("https://mobileimages.lowes.com/product/converted/501141/5011419232734.jpg");
+  font-weight: 600;
+  margin: auto;
+}
+
+.container-fluid {
+  background-image: url("https://vegoutboutique.com/wp-content/uploads/2016/10/brick-wall-wallpaper.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 80%;
-  font-weight: 600;
+  background-size: 100%;
+  height: auto;
 }
 
 img {
@@ -56,16 +57,32 @@ img {
   margin-top: 2em;
   padding: 5px;
   margin-bottom: 2em;
-  height: 200px;
+  height: 500px;
+  width: 900px;
+}
+
+.img-fluid {
+  height: 250px;
+  max-width: 60%;
+}
+
+.carousel-caption {
+  color: #bc6303;
+  position: absolute;
+  right: 15%;
+  bottom: 20px;
+  left: 15%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
 }
 
 p {
   margin-top: 0;
-  padding: 2em;
-  margin-left: -15px;
-  margin-right: -15px;
-  font-size: 1.2em;
-  font-weight: 530;
+  padding: 1em;
+  font-size: medium;
+  font-weight: 500;
 }
 
 #contactme {
@@ -76,7 +93,6 @@ p {
   font-size: 1.2em;
   margin-bottom: 1em;
   line-height: 0.75;
-  margin-left: -15px;
   margin-right: -15px;
   font-weight: 600;
 }

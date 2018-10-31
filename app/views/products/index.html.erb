@@ -2,42 +2,16 @@
 
 
 <h1 id="prod-title">Products</h1>
+<br>
+<div class="container-fluid">
 
-<div class="container-fluid" id="products">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm">
-        <%= image_tag("vbike.jpg", class: "img-fluid") %>
-          <a href="#"><h3>Vin-Bike1</h3></a>
-          <p>Vintage bike with basket</p>
-          <p><strong>$ 42.99</strong></p>
-          <a href="/products/3">Show</a>
-          <a href="/products/3/edit">Edit</a>
-          <a data-confirm="Are You Sure?"rel="nofollow" data-method="delete" href="/products/3">Delete</a>
-      </div><!-- /col -->
+<div class="row">
+  <% @products.each do |product| %>
+     <%= render partial: "product", locals: {product: product} %>
+  <% end %>
+</div>
 
-      <div class="col-sm">
-        <%= image_tag("vbike4.jpg", class: "img-fluid") %>
-        <a href="#"><h3>Vin-Bike2</h3></a>
-        <p>Vintage bike with basket</p>
-        <p><strong>$ 48.98</strong></p>
-        <a href="/products/4">Show</a>
-        <a href="/products/4/edit">Edit</a>
-        <a data-confirm="Are You Sure?"rel="nofollow" data-method="delete" href="/products/4">Delete</a>
-      </div><!-- /col -->
-
-      <div class="col-sm">
-        <%= image_tag("vbike3.jpg", class: "img-fluid") %>
-        <a href="#"><h3>Vin-Bike3</h3></a>
-        <p>Vintage bike with basket</p>
-        <p><strong>$ 45.97</strong></p>
-        <a href="/products/5">Show</a>
-        <a href="/products/5/edit">Edit</a>
-        <a data-confirm="Are You Sure?"rel="nofollow" data-method="delete" href="/products/5">Delete</a>
-      </div><!-- /col -->
-    </div>
-  </div>
-</div> <!--end product container-fluid-->
+</div>
 
 <br>
 
