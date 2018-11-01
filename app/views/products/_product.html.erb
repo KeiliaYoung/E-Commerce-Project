@@ -11,7 +11,9 @@ render for now-->
 
 <div class="col-sm-4">
   <h1><%= product.name %></h1>
-  <%= image_tag(product.image_url, class: "img-responsive") %>
+  <% if product.image_url %>
+    <%= image_tag(product.image_url, class: "img-fluid") %>
+  <% end %>
   <p><%= product.description %></p>
   <strong><%= product.price %></strong>
 
