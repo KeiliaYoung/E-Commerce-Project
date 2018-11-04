@@ -102,6 +102,11 @@ p {
   margin-top: 10px;
 }
 
+.row {
+  flex-wrap: wrap;
+  text-align: center;
+}
+
 footer {
   font-size: 1em;
   color: #4f0000;
