@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Mynewapp</title>
+    <title>Riding-Vintage | Online Store</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
     integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -24,15 +24,40 @@
 
   <body>
 
-    <nav>
-      <ul>
-        <li><%= link_to "Home", root_path %></li>
-        <li><%= link_to "About", simple_pages_about_path %></li>
-        <li><%= link_to "Products", products_path %></li>
-        <li><%= link_to "Orders", orders_path %></li>
-        <li><%= link_to "Contact", simple_pages_contact_path %></li>
-      </ul>
-    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Image and text -->
+      <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img id="brand-img" src="http://www.drodd.com/images15/letter-r17.jpg" class="d-inline-block align-top" alt="">
+            iding-Vintage
+        </a>
+      </nav>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <%= link_to "Home", root_path %><span class="sr-only">(current)</span>
+      </li>
+      <li class="nav-item">
+        <%= link_to "About", simple_pages_about_path %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Products", products_path %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Orders", orders_path %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Contact", simple_pages_contact_path %>
+      </li>
+    </ul>
+  </div>
+  </nav>
+
+
 
     <%= yield %>
 

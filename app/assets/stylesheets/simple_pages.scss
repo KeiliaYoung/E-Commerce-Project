@@ -1,16 +1,6 @@
 // Place all the styles related to the simple_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-nav ul li {
-  display: inline-block;
-  letter-spacing: 0.3em;
-  padding: 1em;
-  font-family: K2D;
-  font-size: 2.1em;
-  font-weight: 600;
-  text-decoration: underline;
-}
-
 h1  {
   margin-bottom: 0;
   padding-top: 15px;
@@ -33,6 +23,11 @@ h3 {
   font-size: 2em;
 }
 
+h4 {
+  font-size: 1.2em;
+}
+
+
 $font-stack: serif, sans-serif;
 $primary-color: #4f0000;
 
@@ -44,30 +39,53 @@ body {
   margin: auto;
 }
 
+nav ul li {
+  display: inline-block;
+  letter-spacing: 0.3em;
+  padding: 1em;
+  font-family: K2D;
+  font-size: 2.1em;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.navbar-brand {
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 2rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
 .container-fluid {
   background-image: url("https://vegoutboutique.com/wp-content/uploads/2016/10/brick-wall-wallpaper.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
-  height: auto;
+  padding: 5em;
 }
 
 img {
-  width: 250px;
-  margin-top: 2em;
-  padding: 5px;
-  margin-bottom: 2em;
-  height: 500px;
-  width: 900px;
+    border-style: none;
+    height: 500px;
+    width: 800px;
+}
+
+.d-inline-block {
+  height: 3em;
+  width: 8em;
+  border-style: double;
 }
 
 .img-fluid {
-  height: 250px;
-  max-width: 60%;
+  height: 150px;
+  max-width: 175px;
 }
 
 .carousel-caption {
-  color: #bc6303;
+  color: #f29900;
   position: absolute;
   right: 15%;
   bottom: 20px;
@@ -76,17 +94,24 @@ img {
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
+  font-size: xx-large;
 }
 
 p {
   margin-top: 0;
   padding: 1em;
   font-size: medium;
-  font-weight: 500;
+  font-weight: 550;
+  line-height: 2em;
 }
 
-#contactme {
+#aboutme {
+  margin-top: -50px;
+}
+
+form {
   text-align: center;
+
 }
 
 #products {
@@ -110,6 +135,6 @@ p {
 footer {
   font-size: 1em;
   color: #4f0000;
-  text-align: right;
-  margin-right: 270px;
+  text-align: center;
+  padding-top: 5em;
 }
