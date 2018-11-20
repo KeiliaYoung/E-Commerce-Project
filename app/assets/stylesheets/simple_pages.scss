@@ -4,7 +4,7 @@
 h1  {
   margin-bottom: 0;
   padding-top: 15px;
-  font-size: 2em;
+  font-size: 3.5em;
   padding-bottom: 8px;
   margin-top: 2em;
   text-decoration: underline;
@@ -13,7 +13,7 @@ h1  {
 
 h2 {
   padding-top: 8px;
-  font-size: 1.5em;
+  font-size: 2em;
   margin-bottom: 0;
   line-height: 2;
   font-weight: 600;
@@ -24,9 +24,8 @@ h3 {
 }
 
 h4 {
-  font-size: 1.2em;
+  font-size: 2em;
 }
-
 
 $font-stack: serif, sans-serif;
 $primary-color: #4f0000;
@@ -59,11 +58,24 @@ nav ul li {
     white-space: nowrap;
 }
 
+label {
+    display: block;
+    color: #4f0000;
+}
+
+input {
+  margin: 0;
+  font-size: inherit;
+  line-height: inherit;
+  color: #4f0000;
+  font-family: K2D;
+}
+
 .container-fluid {
   background-image: url("https://vegoutboutique.com/wp-content/uploads/2016/10/brick-wall-wallpaper.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
   padding: 5em;
 }
 
@@ -80,8 +92,11 @@ img {
 }
 
 .img-fluid {
-  height: 150px;
-  max-width: 175px;
+  height: 300px;
+  max-width: 350px;
+  margin-top: 0.5em;
+  margin-left: 2em;
+  margin-bottom: 0.5em;
 }
 
 .carousel-caption {
@@ -97,20 +112,22 @@ img {
   font-size: xx-large;
 }
 
+#search-btn {
+  color: #4f0000;
+  background-color: #f2d096;
+  border-color: #ffffff;
+
+  &:hover {
+    color: #ffffff;
+  }
+}
+
 p {
   margin-top: 0;
   padding: 1em;
   font-size: medium;
   font-weight: 550;
   line-height: 2em;
-}
-
-#aboutme {
-  margin-top: -50px;
-}
-
-form {
-  text-align: center;
 }
 
 #products {
@@ -129,6 +146,15 @@ form {
 .row {
   flex-wrap: wrap;
   text-align: center;
+  padding-bottom: inherit;
+}
+
+.product-btn {
+  margin-top: 1em;
+}
+
+.form-group {
+  max-width: 35%;
 }
 
 footer {
