@@ -154,7 +154,39 @@ p {
 }
 
 .form-group {
-  max-width: 35%;
+  max-width: 40%;
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.25rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #4f0000;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+textarea {
+  overflow: auto;
+  resize: vertical;
+  font-family: K2D;
+}
+
+.btn-success {
+  color: #4f0000;
+  background-color: #f2d096;
+  border-color: #fff;
+  margin-left: -60%;
+
+  &:hover {
+    color: #ffffff;
+  }
 }
 
 footer {
