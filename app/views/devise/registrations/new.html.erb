@@ -1,10 +1,7 @@
 <h2>Sign up</h2>
-<div class="container-fluid">
+<div class="container-fix">
   <div class="row">
-    <div class="col-lg-8", id="signup-col">
-      <%= image_tag("vbike10.jpg", class: "img-responsive vin-bike", id: "vbike-img") %>
-    </div>
-    <div class="col-sm-4", id="signup-col">
+    <div class="col-sm-12">
       <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
       <%= devise_error_messages! %>
 
@@ -31,7 +28,6 @@
     </div>
   <% end %>
   <%= render "devise/shared/links" %>
-      </div>
     </div> <!--end col-->
   </div><!--end row-->
-</div> <!--end container-fluid-->
+</div> <!--end container-fix-->

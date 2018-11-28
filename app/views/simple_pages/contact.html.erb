@@ -2,8 +2,8 @@
   <div class="container-fluid" id="contactme">
 
     <%= flash[:notice] %>
-    <div class="row">
-      <div class="col-sm-6">
+    <div class="row", id="contact-row">
+      <div class="col-sm-4">
       <%= form_with(url:"/simple_pages/thank_you", method: "post", local: true) do |form| %>
         <div class="form-group">
           <%= form.label :name %>
@@ -21,7 +21,9 @@
       <% end %>
       </div> <!--end col-->
 
-      <div class="col-sm-6">
+
+
+      <div class="col-sm-4">
         <div class="form-group1">
           <p> For more Information, please contact me at: <br>
             <span class="glyphicon glyphicon-phone">Phone: 555-555-5555 </span> <br>

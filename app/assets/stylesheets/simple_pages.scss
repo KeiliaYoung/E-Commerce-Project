@@ -185,10 +185,30 @@ input {
   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
+#contact-row {
+  margin-left: 20%;
+  margin-right: 20%;
+  background-color: #fff5f4;
+  padding: 3em;
+  opacity: 0.8;
+}
+
 // LOGIN PAGE
-#vbike-img {
+.container {
+  background-image: url("https://themerrythought.com/wp-content/uploads/IMG_8220.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   height: 600px;
-  width: 900px;
+  width: 1500px;
+}
+
+//SIGNUP PAGE
+.container-fix {
+  background-image: url("https://i.pinimg.com/736x/4f/2b/08/4f2b08be1082984b540338dbb6311363--bicycle-basket-bike-baskets.jpg");
+  background-repeat: no-repeat;
+  background-color: #e6f2fa;
+  background-size: contain;
 }
 
 //FOOTER
@@ -197,4 +217,10 @@ footer {
   color: #4f0000;
   text-align: center;
   padding-top: 5em;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+#footer-img {
+  height: 100px;
 }
