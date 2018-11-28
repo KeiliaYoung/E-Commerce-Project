@@ -2,7 +2,8 @@
   <div class="container-fluid" id="contactme">
 
     <%= flash[:notice] %>
-
+    <div class="row">
+      <div class="col-sm-6">
       <%= form_with(url:"/simple_pages/thank_you", method: "post", local: true) do |form| %>
         <div class="form-group">
           <%= form.label :name %>
@@ -18,14 +19,20 @@
         </div>
       <%= form.submit "Send", class: "form_label" %>
       <% end %>
+      </div> <!--end col-->
 
-    <div class="form-group1">
-      <p> For more Information, please contact me at: <br>
-        <span class="glyphicon glyphicon-phone">Phone: 555-555-5555 </span> <br>
-        <span class="glyphicon glyphicon-envelope">Email: myemail@gmail.com </span><br>
-        <strong>Social Media</strong>:<br>
-        <a href="https://www.instagram.com/" target="_blank"><span class="glyphicon glyphicon-search"></span> My Instagram </a> <br>
-        <a href="https://www.linkedin.com/" target="_blank"><span class="glyphicon glyphicon-search"></span> My LinkedIn </a> <br>
-      </p>
-    </div> <!-- END FORM-GROUP1-->
+      <div class="col-sm-6">
+        <div class="form-group1">
+          <p> For more Information, please contact me at: <br>
+            <span class="glyphicon glyphicon-phone">Phone: 555-555-5555 </span> <br>
+            <span class="glyphicon glyphicon-envelope">Email: myemail@gmail.com </span><br>
+            <strong>Social Media</strong>:<br>
+            <a href="https://www.instagram.com/" target="_blank"><span class="glyphicon glyphicon-search"></span> My Instagram </a> <br>
+            <a href="https://www.linkedin.com/" target="_blank"><span class="glyphicon glyphicon-search"></span> My LinkedIn </a> <br>
+          </p>
+        </div> <!-- END FORM-GROUP1-->
+      </div>   <!--end col-->
+    </div> <!--end row-->
+
+
   </div> <!--end container-fluid div-->

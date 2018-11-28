@@ -171,11 +171,6 @@ input {
   font-family: K2D;
 }
 
-.form-group {
-  margin-left: 35em;
-  margin-right: 35em;
-}
-
 .form-control {
   display: block;
   width: 100%;
@@ -188,6 +183,12 @@ input {
   border: 1px solid #4f0000;
   border-radius: .25rem;
   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+// LOGIN PAGE
+#vbike-img {
+  height: 600px;
+  width: 900px;
 }
 
 //FOOTER
