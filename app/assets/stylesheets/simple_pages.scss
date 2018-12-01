@@ -57,6 +57,10 @@ nav ul li {
   white-space: nowrap;
 }
 
+.carousel-control {
+  color: #f2d096;
+}
+
 //SEARCH
 #search-btn {
   color: #4f0000;
@@ -81,6 +85,17 @@ nav ul li {
   text-align: center;
   font-size: xx-large;
 }
+
+.carousel-control-next-icon,
+
+.carousel-control-prev-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+}
+
 
 // carousel-images
 img {
