@@ -1,24 +1,40 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @product.name %>
-</p>
+<div class="container-fluid">
+<div class="row">
+  <div class="col-sm-6">
+    <div class="thumbnail">
+        <h3>
+          <%= @product.name %>
+        </h3>
 
-<p>
-  <strong>Description:</strong>
-  <%= @product.description %>
-</p>
+        <div class="product-image img-responsive">
+          <%= image_tag(@product.image_url, class: "image-fluid img-thumbnail") %>
+        </div>
 
-<p>
-  <strong>Image url:</strong>
-  <%= @product.image_url %>
-</p>
+        <div class="caption">
+          <p>
+            <%= @product.description %>
+            <br>
+            Color:
+            <%= @product.color %>
+          </p>
+        </div><!--end caption div-->
+      </div><!--end thumbnail div-->
+    </div><!--end col div-->
 
-<p>
-  <strong>Color:</strong>
-  <%= @product.color %>
-</p>
+    <div class="col-sm-6", id="product-cmts">
+      <div class="view-cmts">
+        <%= @product.comments.order(rating: :desc).first %>
+      </div>
+    </div>
 
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+</div>  <!--end row div-->
+</div> <!--end container-->
+
+
+
+<div class="buttons">
+  <p><%= link_to 'Edit', edit_product_path(@product) %> |
+  <%= link_to 'Back', products_path %></p>
+</div><!--end buttons div-->
