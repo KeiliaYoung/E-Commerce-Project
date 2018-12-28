@@ -14,7 +14,7 @@
       <% @products.each do |product| %>
       <div class="carousel-item<%= " active" if product == @products.first %>">
         <% if product.image_url %>
-          <%= image_tag(product.image_url) %>
+          <%= image_tag(product.image_url, size: "900x600") %>
         <% end %>
         <div class="carousel-caption d-none d-md-block">
           <%= product.name %>
