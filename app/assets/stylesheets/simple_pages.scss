@@ -97,11 +97,7 @@ nav ul li {
 }
 
 // carousel-images
-img {
-  border-style: none;
-  height: 500px;
-  width: 800px;
-}
+
 
 // BODY
 $font-stack: serif, sans-serif;
@@ -125,7 +121,6 @@ body {
 
 p {
   margin-top: 0;
-  padding: 1em;
   font-size: medium;
   font-weight: 550;
   line-height: 2em;
@@ -232,18 +227,9 @@ input {
   text-align: left;
 }
 
-#product-cmts {
-  background-color: #f8f9faa1;
-  padding: 5em;
-  border-radius: 10em;
-  margin-left: -10em;
-  border-style: hidden;
-}
-
 .img-thumbnail {
   padding: .25rem;
-  max-width: 40%;
-  height: 40%;
+  max-width: 50%;
 }
 
 //FOOTER
