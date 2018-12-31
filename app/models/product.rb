@@ -2,6 +2,8 @@ class Product < ApplicationRecord
   has_many :comments
   has_many :orders
 
+    validates :name, presence: true
+
   def self.search(search_term)
     Product.where("name LIKE ?", "%#{search_term}%")
   end
@@ -24,7 +26,7 @@ class Product < ApplicationRecord
 
   def average_rating
     comments.average(:rating).to_f
-  end   
+  end
 
 
 end
