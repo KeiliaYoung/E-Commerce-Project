@@ -2,11 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#product-reviews p {
+.product-reviews p {
   font-size: medium;
   font-family: serif;
-  font-weight: 540;
+  font-weight: 545;
   line-height: 0.75em;
+  text-align: left;
+
 }
 
 #product-cmts {
@@ -24,6 +26,5 @@ h6 {
 }
 
 .star {
-  vertical-align: middle;
-  border-style: none;
+border-style: none;
 }
