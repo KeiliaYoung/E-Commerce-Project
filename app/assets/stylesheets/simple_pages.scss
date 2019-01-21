@@ -61,6 +61,32 @@ nav ul li {
   color: #f2d096;
 }
 
+.login-link,
+.logout-link {
+  color: #7c0303;
+
+  &:visited {
+    color: #594141;
+  }
+
+  &:hover {
+    color: #dde8dc;
+
+  }
+}
+#navbarNav {
+  color: #7c0303;
+
+  &:visited {
+    color: #594141;
+  }
+
+  &:hover {
+    color: #dde8dc;
+
+  }
+}
+
 //SEARCH
 #search-btn {
   color: #4f0000;
@@ -101,7 +127,7 @@ nav ul li {
 
 // BODY
 $font-stack: serif, sans-serif;
-$primary-color: #4f0000;
+$primary-color: #7c0303;
 
 body {
   font: 100% $font-stack;
@@ -243,4 +269,8 @@ footer {
 
 #footer-img {
   height: 100px;
+}
+
+.rating {
+  color: #4f0000;
 }

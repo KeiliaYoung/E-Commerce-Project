@@ -35,41 +35,48 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <!-- Image and text -->
-      <nav class="navbar navbar-light bg-light">
+
+        <%= link_to simple_pages_landing_page_path, class: 'navbar-brand' do %>
+          <%= image_tag '//www.drodd.com/images15/letter-r17.jpg', class: 'd-inline-block align-top' %>
+          iding-Vintage
+        <% end %>
+
+      <!-- Same as rails block above
         <a class="navbar-brand" href="#">
           <img id="brand-img" src="http://www.drodd.com/images15/letter-r17.jpg" class="d-inline-block align-top" alt="">
             iding-Vintage
         </a>
-      </nav> <!--end navbar navbar-light bg-light -->
+        -->
+
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <%= link_to "Home", simple_pages_landing_page_path %><span class="sr-only">(current)</span>
+          <%= link_to "Home", simple_pages_landing_page_path, class: "nav-link" %><span class="sr-only">(current)</span>
         </li>
         <li class="nav-item">
-          <%= link_to "About", simple_pages_about_path %>
+          <%= link_to "About", simple_pages_about_path, class: "nav-link" %>
         </li>
         <li class="nav-item">
-          <%= link_to "Products", products_path %>
+          <%= link_to "Products", products_path, class: "nav-link" %>
         </li>
         <li class="nav-item">
-          <%= link_to "Orders", orders_path %>
+          <%= link_to "Orders", orders_path, class: "nav-link" %>
         </li>
         <li class="nav-item">
-          <%= link_to "Contact", simple_pages_contact_path %>
+          <%= link_to "Contact", simple_pages_contact_path, class: "nav-link" %>
         </li>
       </ul>
         <ul class="navbar-nav ml-auto">
           <% if user_signed_in? %>
           <li class="nav-item">
-            <%= link_to('Logout', destroy_user_session_path, method: :delete, class: "nav-link") %>
+            <%= link_to('Logout', destroy_user_session_path, method: :delete, class: "logout-link") %>
           </li>
           <% else %>
           <li class="nav-item">
-            <%= link_to('Login', new_user_session_path, class: "nav-link") %>
+            <%= link_to('Login', new_user_session_path, class: "login-link") %>
           </li>
           <% end %>
         </ul>
@@ -89,9 +96,7 @@
   </form> -->
 
   </nav> <!--end navbar-expand-lg nav-->
-    <%= flash[:notice] %>
-    <%= yield %>
-
+  
   </body>
 
   <footer>

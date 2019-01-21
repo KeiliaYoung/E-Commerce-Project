@@ -8,13 +8,13 @@
       <% end %>
     </p> <br>
 
+    <p class="rated" data-score="<%= comment.rating %>"></p>
 
-      <p class="rated" data-score="<%= comment.rating %>"></p>
-
-        <div class="comments.body">
-          <p>
-            <%= comment.body %>
-          </p>
-        </div> <br>
+    <div class="comments.body">
+      <p>
+        <%= comment.body %>
+      </p>
+    </div> <br>
     <% end %>
+
 </div>
