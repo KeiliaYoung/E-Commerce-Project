@@ -14,7 +14,7 @@
   <% end %>
 
   <div class="">
-    <%= form_with(url: '/payments/create') do |form| %>
+    <%= form_with(url:"/payments/create", method: "post", local: true) do |form| %>
       <%= render partial: "shared/stripe_checkout_button" %>
       <%= hidden_field_tag(:product_id, @product.id) %>
     <% end %>
