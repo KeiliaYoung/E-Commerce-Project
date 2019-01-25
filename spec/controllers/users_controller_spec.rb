@@ -1,6 +1,7 @@
 require 'rails_helper'
 
   describe UsersController, type: :controller do
+
     before do
       @user = FactoryBot.create(:user)
       @user2 = FactoryBot.create(:user)
@@ -18,21 +19,21 @@ require 'rails_helper'
 
         it 'loads correct user details' do
           get :show, params: { id: @user.id }
-          expect(response).to be_ok
+          expect(response).to have_http_status(200)
           expect(assigns(:user)).to eq @user
         end
 
-        it "cannot access the other user's page" do
+        it 'cannot access the other users page' do
           get :show, params: { id: @user2.id }
           expect(response).to have_http_status(302)
-          expect(response).to redirect_to root_path
+          expect(response).to redirect_to (root_path)
         end
       end
 
         context 'when a user is not logged in' do
           it 'redirects to login' do
             get :show, params: { id: @user.id }
-            expect(response).to redirect_to new_user_session_path
+            expect(response).to redirect_to (new_user_session_path)
           end
         end
     end

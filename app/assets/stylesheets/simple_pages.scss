@@ -47,6 +47,21 @@ nav ul li {
   text-decoration: underline;
 }
 
+.navbar-light .navbar-nav .nav-link {
+  color: #7c0303;
+
+  &:visited {
+    color: #594141;
+  }
+
+  &:hover {
+    color: #ffc107;
+    font-style: italic;
+    font-size: 1.5em;
+
+  }
+}
+
 .navbar-brand {
   display: inline-block;
   padding-top: .3125rem;
@@ -70,20 +85,9 @@ nav ul li {
   }
 
   &:hover {
-    color: #dde8dc;
-
-  }
-}
-#navbarNav {
-  color: #7c0303;
-
-  &:visited {
-    color: #594141;
-  }
-
-  &:hover {
-    color: #dde8dc;
-
+    color: #ffc107;
+    font-style: italic;
+    font-size: 1.5em;
   }
 }
 
