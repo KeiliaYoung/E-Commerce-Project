@@ -10,7 +10,7 @@
           </h3>
 
           <div class="product-image img-responsive">
-            <%= image_tag(@product.image_url, class: "image-fluid img-thumbnail") %>
+            <%= image_tag(@product.image_url, class: "image-fluid img-zoom", data_zoom_image: "@product.image_url") %>
           </div>
 
           <div class="caption">
