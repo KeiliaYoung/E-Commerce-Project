@@ -21,7 +21,7 @@ class ProductsController < ApplicationController
 
   # GET /products/new
   def new
-    byebug # use byebug (gem) to set breakpoints and step through live code in Rails.
+  #  byebug use byebug (gem) to set breakpoints and step through live code in Rails.
     @product = Product.new
   end
 
