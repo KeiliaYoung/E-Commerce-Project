@@ -1,46 +1,36 @@
 <p id="notice"><%= notice %></p>
 <!-- Use this (@product.comments.order(rating: :desc).first.body) in order to see highest rating comment first with < % = -->
-
-<div class="container-fluid">
+<div class="container-1">
   <div class="row">
-    <div class="col-lg-6">
-      <div class="thumbnail">
-          <h3>
-            <%= @product.name %>
-          </h3>
+      <div class="col", id="thumbnail-row">
+          <h3><%= @product.name %></h3>
 
           <div class="product-image img-responsive">
             <%= image_tag(@product.image_url, class: "image-fluid img-zoom", data_zoom_image: "@product.image_url") %>
           </div>
 
           <div class="caption">
-            <p>
-              <%= @product.description %>
-              <br>
-              Color:
-              <%= @product.color %>
-            </p>
+            <p><%= @product.description %><br>Color:<%= @product.color %></p>
             Average Rating:
-            <div class="rated" data-score="<%= @product.average_rating %>"></div> <br>
-
+            <div class="rated", id="#average-rating" data-score="<%= @product.average_rating %>"></div> <br>
           </div><!--end caption div-->
-        </div><!--end thumbnail div-->
-      </div><!--end col div-->
 
-      <div class="col-lg-6">
-        <div class="view-cmts">
+          <div class="products-cmts", id="product-cmts" >
+            <h6><em>Your Comments here:<em></h6>
+              <%= render 'comments' %>
+              <%= will_paginate @comments %>
+          </div> <!--end products-cmts div-->
+        </div> <!--end col div-->
+
+        <div class="w-100"></div>
+
+      <div class="col", id="review-row" >
           <%= render 'new_comment' %>
-        </div>
       </div>
+
+
   </div> <!--end row div-->
-
-  <div class="products-cmts", id="product-cmts" >
-    <h6><em>Your Comments here:<em></h6>
-    <%= render 'comments' %>
-    <%= will_paginate @comments %>
-  </div>
-
-</div> <!--end container-->
+</div> <!--end container1-->
 
 <div class="buttons">
   <p><%= link_to 'Edit', edit_product_path(@product) %> |

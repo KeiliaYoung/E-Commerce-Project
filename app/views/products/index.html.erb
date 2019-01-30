@@ -3,15 +3,15 @@
 
 <h2 id="prod-title">Products</h2>
 <br>
+<div class="container-fluid", id="products-page">
 
-
-<div class="container-fluid">
   <div class="row col-xs-12 col-sm-3 col-lg-12">
-    <% @products.each do |product| %>
+    <% @products.each do |product| %> <br>
       <%= render partial: "product", locals: {product: product} %>
     <% end %>
   </div>
-</div> <!-- end row -->
+
+</div>
 
 <br>
 

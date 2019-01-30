@@ -29,26 +29,21 @@ h4 {
   font-size: 2em;
 }
 
-// BRAND-IMAGE
-.d-inline-block {
-  height: 3em;
-  width: 8em;
-  border-style: double;
-}
-
 // NAVBAR
 nav ul li {
   display: inline-block;
-  letter-spacing: 0.3em;
-  padding: 1em;
+  letter-spacing: 0.2em;
+  padding: 2em;
   font-family: K2D;
-  font-size: 2.1em;
+  font-size: 2em;
   font-weight: 600;
   text-decoration: underline;
 }
 
 .navbar-light .navbar-nav .nav-link {
   color: #7c0303;
+  padding-left: 0;
+  padding-right: 0;
 
   &:visited {
     color: #594141;
@@ -59,6 +54,17 @@ nav ul li {
     font-style: italic;
     font-size: 1.5em;
 
+  }
+}
+
+.navbar-light .navbar-brand {
+  color: #bd0012;
+  font-size: 3em;
+  font-family: Sail;
+
+  &:hover {
+    color: #ffc107;
+    font-style: italic;
   }
 }
 
@@ -98,7 +104,7 @@ nav ul li {
   border-color: #ffffff;
 
   &:hover {
-    color: #ffffff;
+    color: #ffc107;
   }
 }
 
@@ -149,6 +155,14 @@ body {
   padding: 5em;
 }
 
+.container-1 {
+  background-image: url("https://vegoutboutique.com/wp-content/uploads/2016/10/brick-wall-wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 5em;
+}
+
 p {
   margin-top: 0;
   font-size: medium;
@@ -157,6 +171,47 @@ p {
 }
 
 // PRODUCTS
+.product-reviews p {
+  font-size: medium;
+  font-family: serif;
+  font-weight: 545;
+  line-height: 0.8em;
+  text-align: left;
+}
+
+#products-page {
+  background-color: #f8f9faa1;
+}
+
+#thumbnail-row {
+  max-width: 50%;
+  background-color: #f8f9faa1;
+  padding: 5em;
+  border-radius: 10em;
+}
+
+#review-row {
+  max-width: 100%;
+  border-radius: 12em;
+  padding: 10em;
+}
+
+#product-cmts {
+  text-align: left;
+}
+
+h6 {
+  text-align: left;
+  padding-bottom: 0.5em;
+  text-decoration: underline;
+  color: #000000;
+  font-weight: 600;
+}
+
+.star {
+  border-style: 00000;
+}
+
 #products {
   font-size: 1.2em;
   margin-bottom: 1em;
@@ -170,13 +225,19 @@ p {
   margin-top: 10px;
 }
 
+.pagination {
+  padding-left: 0;
+  font-family: serif;
+  text-align: left;
+  display: flow-root;
+}
+
 //product-images
 .img-fluid {
   height: 300px;
-  max-width: 350px;
-  margin-top: 0.5em;
-  margin-left: 2em;
-  margin-bottom: 0.5em;
+  max-width: 300px;
+  border-radius: 2em;
+  margin: 1.5em;
 }
 
 // PRODUCT BUTTONS (show, edit, delete)
@@ -249,11 +310,20 @@ input {
   background-size: contain;
 }
 
-.view-cmts {
+#review-cmts {
   font-size: 15px;
   font-family: serif;
   color: #000000;
   text-align: left;
+  padding-left: -15;
+  margin-left: -15;
+
+}
+
+.row2 {
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
 }
 
 .img-zoom {
