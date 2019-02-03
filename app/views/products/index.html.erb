@@ -6,8 +6,8 @@
 <div class="container-fluid", id="products-page">
 
   <div class="row col-xs-12 col-sm-3 col-lg-12">
-    <% @products.each do |product| %> <br>
-      <%= render partial: "product", locals: {product: product} %>
+    <% cache(cache_key_for_products) do %>
+      <%= render @products %>
     <% end %>
   </div>
 
@@ -15,6 +15,9 @@
 
 <br>
 
-<div class="btn btn-success">
-  <a class="new-product" href="/products/new">New Product</a>
-</div> <!-- end btn div -->
+<% if signed_in? && current_user.admin? %>
+
+    <div class="btn btn-success">
+      <a class="new-product" href="/products/new">New Product</a>
+    </div> <!-- end btn div -->
+<% end %>

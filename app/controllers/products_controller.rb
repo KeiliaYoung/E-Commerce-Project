@@ -6,7 +6,11 @@ class ProductsController < ApplicationController
   def index
     if params[:q]
       search_term = params[:q]
-      @products = Product.where("name LIKE ?", "%#{search_term}%")
+      @products = Product.search(search_term)
+      if @products.nil?
+        flash.now[:notice] = "We do not have anything called #{search_term}, please check out the rest of our products.  Thank you!"
+        @products = Product.limit(4)
+      end
     # return our filtered list here
     else
       @products = Product.all
