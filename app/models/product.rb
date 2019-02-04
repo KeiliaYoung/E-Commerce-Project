@@ -8,7 +8,7 @@ class Product < ApplicationRecord
     if Rails.env.development?
       Product.where("name LIKE ? OR description LIKE ? OR color LIKE ?", "%#{search_term}%", "%#{search_term}%", "%#{search_term}%")
     else
-      Product.where("name ilike ?", "%#{search_term}%")
+      Product.where("name ilike ? OR description ilike ? OR color ilike ?", "%#{search_term}%", "%#{search_term}%", "%#{search_term}%")
     end
   end
 

@@ -23,7 +23,7 @@ require 'rails_helper'
           expect(assigns(:user)).to eq @user
         end
 
-        xit 'cannot access the other users page' do
+        it 'cannot access the other users page' do
           get :show, params: { id: @user2.id }
           expect(response).to have_http_status: 302
           expect(response).to redirect_to (root_path)
