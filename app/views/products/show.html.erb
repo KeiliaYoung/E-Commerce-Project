@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 <!-- Use this (@product.comments.order(rating: :desc).first.body) in order to see highest rating comment first with < % = -->
 <div class="container-1">
-  <div class="row">
+  <div class="row" data-product-id="<%= @product.id %>">
       <div class="col", id="thumbnail-row">
           <h3><%= @product.name %></h3>
 
