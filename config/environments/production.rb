@@ -105,4 +105,7 @@ Rails.application.configure do
 
   # actual host of app
   config.action_mailer.default_url_options = { host: 'riding-vintage.herokuapp.com' }
+
+  config.web_socket_server_url = "wss://riding-vintage.herokuapp.com/cable"
+  config.action_cable.allowed_request_origins = ['https://riding-vintage.herokuapp.com', 'http://riding-vintage.herokuapp.com']
 end
