@@ -1,8 +1,5 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
-  before_action only: [:new, :edit, :update, :destroy] do
-    redirect_to products_path, notice: 'You need to be an Admin to perform this action!' unless current_user && current_user.admin
-  end
 
   # GET /products
   # GET /products.json
@@ -10,15 +7,15 @@ class ProductsController < ApplicationController
     if params[:q]
       search_term = params[:q]
       @products = Product.search(search_term)
-        if @products.nil?
-          flash.now[:notice] = "We do not have anything called #{search_term}, please check out the rest of our products. Thank you!"
-          @products = Product.limit(4)
-        end
+      if @products.nil?
+          flash.now[:notice] = "We do not have anything called #{search_term}, please check out the rest of our products.  Thank you!"
+        @products = Product.limit(4)
+      end
     # return our filtered list here
-        else
-          @products = Product.all
-        end
+    else
+      @products = Product.all
     end
+  end
 
   # GET /products/1
   # GET /products/1.json

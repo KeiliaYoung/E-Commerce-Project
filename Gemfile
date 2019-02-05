@@ -87,3 +87,5 @@ gem 'stripe'
 gem 'brakeman', '~> 4.4'
 
 gem 'dalli'
+
+gem 'redis-rails'

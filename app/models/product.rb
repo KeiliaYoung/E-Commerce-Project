@@ -4,13 +4,14 @@ class Product < ApplicationRecord
 
     validates :name, presence: true
 
-  def self.search(search_term)
-    if Rails.env.development?
-      Product.where("name LIKE ? OR description LIKE ? OR color LIKE ?", "%#{search_term}%", "%#{search_term}%", "%#{search_term}%")
-    else
-      Product.where("name ilike ? OR description ilike ? OR color ilike ?", "%#{search_term}%", "%#{search_term}%", "%#{search_term}%")
+    def self.search(search_term)
+      Product.where("name LIKE ?", "%#{search_term}%")
+      if Rails.env.development?
+        Product.where("name LIKE ? OR description LIKE ? OR color LIKE ?", "%#{search_term}%", "%#{search_term}%", "%#{search_term}%")
+      else
+        Product.where("name ilike ?", "%#{search_term}%")
+      end
     end
-  end
 
   def index
     if params[:q]
