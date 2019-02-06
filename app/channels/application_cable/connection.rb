@@ -10,8 +10,7 @@ module ApplicationCable
 
     end
 
-# This method will return a user record if the user is logged in. If the user
-# isn't logged in, we're going to use Rails' default method to reject the connection attempt.
+
     protected
 
     def find_verified_user
@@ -26,6 +25,8 @@ end
 
 
 
+# This method will return a user record if the user is logged in. If the user
+# isn't logged in, we're going to use Rails' default method to reject the connection attempt.
 # request.env['warden'] is an environment variable containing information about the current user
 # The connection.rb file can be used to run any sort of code before the connection
 # between a user and the server is established. This can be useful for authentication, for example.

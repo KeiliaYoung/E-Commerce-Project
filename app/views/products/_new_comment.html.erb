@@ -5,7 +5,7 @@
     <%= form_for([@product, @product.comments.build], remote: true) do |f| %>
       <p>
         <%= f.label :body, "Comments" %>
-        <%= f.text_area :body %>
+        <%= f.text_area :body, class: "comment_body" %>
       </p>
       <p>
         <div class="rating"></div>
