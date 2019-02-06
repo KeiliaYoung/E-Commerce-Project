@@ -67,4 +67,5 @@ Rails.application.configure do
   # This will tell the rails generator to generate plain JavaScript files instead of CoffeeScript files.
   config.app_generators.javascript_engine = :javascript
 
+  config.active_record.schema_format = :sql
 end
