@@ -1,7 +1,4 @@
-<h2>Featured Products</h2>
-
-
-<div class="container-fluid">
+<div class="container", id="landing-page">
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -11,18 +8,24 @@
     </ol>
 
     <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-      <% @products.each do |product| %>
-      <div class="carousel-item<%= " active" if product == @products.first %>">
-        <% if product.image_url %>
-          <%= image_tag(product.image_url, size: "900x600") %>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+            <% @products.each do |product| %>
+              <div class="carousel-item<%= " active" if product == @products.first %>">
+                  <% if product.image_url %>
+                    <%= image_tag(product.image_url, :class => "d-block w-100")  %>
+                  <% end %>
+                  <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-cap-header"><br>
+                    Your Source for Vintage Bikes with Baskets!
+                    </div>
+                    <%= product.name %>
+
+                  </div> <!-- end carousel-caption -->
+              </div> <!-- end carousel-item -->
         <% end %>
-        <div class="carousel-caption d-none d-md-block">
-          <%= product.name %>
-        </div> <!-- end carousel-caption -->
-      </div> <!-- end carousel-item -->
-      <% end %>
-    </div> <!-- end carousel-inner -->
+      </div> <!-- end carousel-inner -->
+    </div><!-- end carouselslide div -->
 <!-- Controls -->
 
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

@@ -2,6 +2,28 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+// LOGIN/SIGNIN PAGES
+
+
+// LOGIN PAGE
+#login-page {
+  background-image: url("https://themerrythought.com/wp-content/uploads/IMG_8220.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+  width: 1500px;
+}
+
+//SIGNUP PAGE
+#signp-container {
+  background-image: url("https://i.pinimg.com/736x/4f/2b/08/4f2b08be1082984b540338dbb6311363--bicycle-basket-bike-baskets.jpg");
+  background-repeat: no-repeat;
+  background-color: #e6f2fa;
+  background-size: contain;
+}
+
 // HEADERS
 h1  {
   margin-bottom: 0;
@@ -15,7 +37,6 @@ h1  {
 
 h2 {
   padding-top: 8px;
-  font-size: 2em;
   margin-bottom: 0;
   line-height: 2;
   font-weight: 600;
@@ -29,38 +50,23 @@ h4 {
   font-size: 2em;
 }
 
-// NAVBAR
-nav ul li {
-  display: inline-block;
-  letter-spacing: 0.2em;
-  padding: 2em;
-  font-family: K2D;
-  font-size: 2em;
-  font-weight: 600;
+h6 {
+  text-align: left;
+  padding-bottom: 0.5em;
   text-decoration: underline;
+  color: #000000;
+  font-weight: 600;
 }
 
-.navbar-light .navbar-nav .nav-link {
-  color: #7c0303;
-  padding-left: 0;
-  padding-right: 0;
-
-  &:visited {
-    color: #594141;
-  }
-
-  &:hover {
-    color: #ffc107;
-    font-style: italic;
-    font-size: 1.5em;
-
-  }
+// NAVBAR
+.collapse .navbar-collapse ul li {
+  text-align: right;
 }
 
 .navbar-light .navbar-brand {
   color: #bd0012;
   font-size: 3em;
-  font-family: Sail;
+  font-family: Charmonman;
 
   &:hover {
     color: #ffc107;
@@ -68,49 +74,36 @@ nav ul li {
   }
 }
 
-.navbar-brand {
-  display: inline-block;
-  padding-top: .3125rem;
-  padding-bottom: .3125rem;
-  margin-right: 1rem;
-  font-size: 2rem;
-  line-height: inherit;
-  white-space: nowrap;
+.ul.navbar.nav.mr-auto {
+  padding: 0;
+
 }
 
-.carousel-control {
-  color: #f2d096;
-}
-
-.login-link,
-.logout-link {
-  color: #7c0303;
-
-  &:visited {
-    color: #594141;
-  }
-
-  &:hover {
-    color: #ffc107;
-    font-style: italic;
-    font-size: 1.5em;
-  }
+li.nav-item {
+    font-size: 1.1rem;
 }
 
 //SEARCH
 #search-btn {
   color: #4f0000;
-  background-color: #f2d096;
+  background-color: #e9ecef;
   border-color: #ffffff;
+  display: flex;
+
 
   &:hover {
     color: #ffc107;
   }
 }
 
+
 // CAROUSEL
+.carousel-control {
+  color: #f2d096;
+}
+
 .carousel-caption {
-  color: #f29900;
+  color: #bd0012;
   position: absolute;
   right: 15%;
   bottom: 20px;
@@ -125,15 +118,23 @@ nav ul li {
 .carousel-control-next-icon,
 
 .carousel-control-prev-icon {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background: transparent no-repeat center center;
-    background-size: 100% 100%;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
 }
 
-// carousel-images
+.carousel-cap-header {
+  margin-bottom: 50%;
+  font-size: 1.5em;
+  color: #bd0012;
+  background-position: center;
+  background-color:  #dee2e67a;
+  border-radius: 20em;
+  padding: 2em;
 
+}
 
 // BODY
 $font-stack: serif, sans-serif;
@@ -155,61 +156,36 @@ body {
   padding: 5em;
 }
 
-.container-1 {
-  background-image: url("https://vegoutboutique.com/wp-content/uploads/2016/10/brick-wall-wallpaper.jpg");
+// ABOUT ME
+#aboutme {
+  background-image: url("https://uploads.disquscdn.com/images/a59f7c22dbec0793fdf531126ed4635d639c85aefedc3498c962493710ae33e9.gif");
+  background-size: 600px;
   background-repeat: no-repeat;
+  text-align: center;
   background-position: center;
-  background-size: cover;
-  padding: 5em;
+  height: 1100px;
+}
+
+#products-show-page {
+  background-image: url("https://vegoutboutique.com/wp-content/uploads/2016/10/brick-wall-wallpaper.jpg");
+  background-repeat: repeat-y;
+  background-position: center;
+  background-color: #f8f9faa1;
+  padding: 3em;
 }
 
 p {
   margin-top: 0;
   font-size: medium;
-  font-weight: 550;
+  font-weight: 450;
   line-height: 2em;
+  background-color: #dee2e67a;
 }
 
-// PRODUCTS
-.product-reviews p {
-  font-size: medium;
-  font-family: serif;
-  font-weight: 545;
-  line-height: 0.8em;
-  text-align: left;
-}
-
-#products-page {
-  background-color: #f8f9faa1;
-}
-
-#thumbnail-row {
-  max-width: 50%;
-  background-color: #f8f9faa1;
-  padding: 5em;
-  border-radius: 10em;
-}
-
-#review-row {
-  max-width: 100%;
-  border-radius: 12em;
-  padding: 10em;
-}
-
-#product-cmts {
-  text-align: left;
-}
-
-h6 {
-  text-align: left;
-  padding-bottom: 0.5em;
-  text-decoration: underline;
-  color: #000000;
-  font-weight: 600;
-}
-
-.star {
-  border-style: 00000;
+// PRODUCTS INDEX PAGE
+#prod-title {
+  padding-top: 0px;
+  margin-top: 10px;
 }
 
 #products {
@@ -220,9 +196,52 @@ h6 {
   font-weight: 600;
 }
 
-#prod-title {
-  padding-top: 0px;
-  margin-top: 10px;
+.data-product-id {
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+//PRODUCTS SHOW PAGE
+.product-reviews p {
+  font-size: medium;
+  font-family: serif;
+  font-weight: 545;
+  line-height: 0.8em;
+  text-align: left;
+}
+
+.img-zoom {
+  padding: 2em;
+  max-width: 50%;
+}
+
+#thumbnail-row {
+  max-width: 50%;
+  margin: 3em;
+}
+
+#review-row {
+  max-width: 100%;
+  border-radius: 12em;
+  margin: 3em;
+}
+
+#product-cmts {
+  text-align: left;
+}
+
+#review-cmts {
+  font-size: 15px;
+  font-family: serif;
+  color: #000000;
+  text-align: left;
+  padding-left: -15;
+  margin-left: -15;
+}
+
+.star {
+  border-style: 00000;
 }
 
 .pagination {
@@ -233,10 +252,10 @@ h6 {
 }
 
 .comment_body {
-    overflow: auto;
-    resize: vertical;
-    height: 150px;
-    width: 300px;
+  overflow: auto;
+  resize: vertical;
+  height: 150px;
+  width: 300px;
 }
 
 //product-images
@@ -277,9 +296,9 @@ input {
   font-family: K2D;
 }
 
-.form-control {
-  display: block;
-  width: 100%;
+.form-inline-block {
+  margin-right: 15px;
+  display: inline;
   padding: 0.25rem;
   font-size: 1rem;
   line-height: 1.5;
@@ -291,51 +310,56 @@ input {
   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
-#contact-row {
-  margin-left: 20%;
-  margin-right: 20%;
-  background-color: #fff5f4;
-  padding: 3em;
-  opacity: 0.8;
-}
+// CONTACTME
+.contact {
+		padding: 4%;
+		height: 400px;
+	}
 
-// LOGIN PAGE
-.container {
-  background-image: url("https://themerrythought.com/wp-content/uploads/IMG_8220.jpg");
+#contact-col-md {
+  background-image: url("https://i.pinimg.com/236x/b6/6a/e6/b66ae67dfed97108e10ddf8a38e45df6--baskets.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+	padding: 4%;
   background-size: cover;
-  height: 600px;
-  width: 1500px;
 }
 
-//SIGNUP PAGE
-.container-fix {
-  background-image: url("https://i.pinimg.com/736x/4f/2b/08/4f2b08be1082984b540338dbb6311363--bicycle-basket-bike-baskets.jpg");
-  background-repeat: no-repeat;
-  background-color: #e6f2fa;
-  background-size: contain;
+.contact-info {
+	margin-top:10%;
 }
 
-#review-cmts {
-  font-size: 15px;
-  font-family: serif;
-  color: #000000;
-  text-align: left;
-  padding-left: -15;
-  margin-left: -15;
-
+.contact-info img {
+	margin-bottom: 15%;
 }
 
-.data-product-id {
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
+.contact-info h2 {
+	margin-bottom: 10%;
 }
 
-.img-zoom {
-  padding: .25rem;
-  max-width: 50%;
+.col-md-9 {
+	background: #fff;
+	padding: 3%;
+	border-top-right-radius: 0.5rem;
+	border-bottom-right-radius: 0.5rem;
+}
+
+.contact-form label {
+	font-weight:600;
+}
+
+.contact-form button {
+	background: #25274d;
+	color: #fff;
+	font-weight: 600;
+	width: 25%;
+}
+
+.contact-form button:focus {
+	box-shadow:none;
+}
+
+.form-group {
+  text-align: -webkit-center;
+  margin-bottom: 1rem;
 }
 
 //FOOTER
