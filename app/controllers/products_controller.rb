@@ -8,8 +8,7 @@ class ProductsController < ApplicationController
       search_term = params[:q]
       @products = Product.search(search_term)
       if @products.nil?
-          flash.now[:notice] = "We're sorry, we don't have anything related to #{search_term}. Please check out the other products that we offer."
-        @products = Product.limit(4)
+          flash.now[:success] = "We're sorry, we don't have anything related to #{search_term}. Please check out the other products that we offer."
       end
     # return our filtered list here
     else
