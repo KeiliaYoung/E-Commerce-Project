@@ -5,6 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-Product.create(name: "Decorative-Vintage", image_url: "https://images.homedepot-static.com/productImages/10c02d87-46ac-454b-8bbd-eeb475d12bf4/svn/gray-litton-lane-plant-pots-44472-64_1000.jpg", description: "Decorative vintage bike with basket.", price: "decimal")
-Product.create(name: "Classic-Vintage", image_url: "https://c.stocksy.com/a/fqB000/z9/45549.jpg", description: "Classic vintage bike with basket.", price: "decimal")
-Product.create(name: "Boho-Vintage", image_url: "https://i.pinimg.com/originals/ba/d9/d0/bad9d0b2ed2fd0888fff6d48e00a1265.jpg", description: "Boho vintage bike with basket.", price: "decimal")
+Product.create(name: "Spirit-Vintage", image_url: "https://i.pinimg.com/originals/e5/a5/5f/e5a55f024fe8a3567b4a388263bad13f.jpg", description: "White vintage bike with basket.", price: "decimal")
+Product.create(name: "Cloud-Vintage", image_url: "https://i.pinimg.com/originals/70/49/6e/70496e6a185981db108fdc8b3dac54d5.jpg", description: "Classic vintage bike with basket.", price: "decimal")
+Product.create(name: "Stone-Age Vintage", image_url: "https://i.pinimg.com/originals/98/a5/e9/98a5e961cd8af0c3f5bd04e0424e76e9.jpg", description: "Charming vintage bike for the historian in you.", price: "decimal")
+Product.create(name: "Royal Vintage", image_url: "https://media.gettyimages.com/photos/purple-bicycle-is-decorating-a-lavender-shop-between-old-houses-of-picture-id854993428", description: "Feel like royalty with this mesmerizing vintage bike.", price: "decimal")

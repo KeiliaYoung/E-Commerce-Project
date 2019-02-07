@@ -1,12 +1,10 @@
 <div class="row">
   <% @orders.each do |order| %>
-    <div class="col-md">
-      <h1>
+    <div class="col-sm-6">
         Order # <%= order.id %>:
-        <%= link_to @order.product.name, order.id %>
-      </h1>
-      <%= order.product.description %>
-      <strong>$ <%= order.product.price %></strong>
+        <%= link_to orders_path, order %>
+        <%= order.product.description if order.product %>
+        <strong>$ <%= order.product.price if order.product %></strong>
     </div><!-- /col -->
   <% end %>
 </div>

@@ -1,8 +1,9 @@
 <h2>Log in</h2>
   <div class="container",  id="login-page">
-    <div class="row>"
+    <div class="row">
       <div class="col-sm-12">
           <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+          
         <div class="field">
           <%= f.label :email %><br />
           <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
