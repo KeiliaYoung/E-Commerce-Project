@@ -1,10 +1,18 @@
-<div class="row">
-  <% @orders.each do |order| %>
-    <div class="col-sm-6">
-        Order # <%= order.id %>:
-        <%= link_to orders_path, order %>
-        <%= order.product.description if order.product %>
-        <strong>$ <%= order.product.price if order.product %></strong>
-    </div><!-- /col -->
-  <% end %>
-</div>
+<div class="order-content">
+    <h1>Orders</h1><br><br>
+        <div class="row order-table">
+            <% @orders.each do |order| %>
+                <% if order.product.present? %>
+            <div class="col-sm-4">
+                Order # <%= order.id %>:
+                <%= link_to order.product.name, order %><br>
+                <%= image_tag(order.product.image_url, class: "img-fluid order-img") %>
+              <div class="order-price-description">
+                  <p><%= order.product.description if order.product %><br>
+                  <strong>$ <%= order.product.price if order.product %></strong></p>
+              </div>
+            </div><!-- end col div -->
+                <% end %>
+              <% end %>
+        </div><!--end row div-->
+</div><!--end order-content div-->
